@@ -9,7 +9,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const apiUrl = process.env.NEXT_PUBLIC_WEATHER_API_URL;
+  const apiUrl = process.env.NEXT_PUBLIC_ENV === 'dev' ? process.env.NEXT_PUBLIC_WEATHER_API_URL : '/proxy';
 
   const searchCity = async (city: string) => {
     setLoading(true);
