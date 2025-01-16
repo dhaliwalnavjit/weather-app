@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/proxy/:match*", "destination": "http://lb-weather-app-340130897.us-east-1.elb.amazonaws.com/:match*" }
+    { "source": "/proxy/:match*", "destination": "http://lb-weather-app-812522037.us-east-1.elb.amazonaws.com/:match*" }
   ]
 }
